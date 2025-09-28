@@ -1,6 +1,4 @@
-// src/components/NewsHeader.jsx
 import { Input } from "@/components/ui/input";
-// 1. استيراد مكونات Select
 import {
   Select,
   SelectContent,
@@ -9,13 +7,18 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 
-// 2. استقبال props جديدة
-export function NewsHeader({
-  onSearchChange,
-  onCategoryChange,
-  category,
-  isCategoryDisabled,
-}) {
+/**
+ * مكون رأس الصفحة (Header) الخاص بالأخبار.
+ * يحتوي على عنوان التطبيق، حقل للبحث، وقائمة منسدلة لاختيار فئة الأخبار.
+ * @param {object} props - الخصائص المستلمة من المكون الأب.
+ * @param {(query: string) => void} props.onSearchChange - دالة يتم استدعاؤها عند تغيير قيمة حقل البحث.
+ * @param {(category: string) => void} props.onCategoryChange - دالة يتم استدعاؤها عند تغيير الفئة المختارة.
+ * @param {string} props.category - الفئة الحالية المختارة.
+ * @param {boolean} props.isCategoryDisabled - متغير منطقي لتحديد ما إذا كان يجب تعطيل قائمة الفئات.
+ * @returns {JSX.Element} - مكون رأس الصفحة.
+ */
+export function NewsHeader({ onSearchChange, onCategoryChange, category, isCategoryDisabled }) {
+  // قائمة الفئات المتاحة في الـ API.
   const categories = [
     "general",
     "business",
@@ -34,18 +37,22 @@ export function NewsHeader({
           type="text"
           placeholder="Search for articles..."
           className="flex-grow text-center sm:text-left"
+          // استدعاء الدالة عند كل تغيير في الإدخال.
           onChange={(e) => onSearchChange(e.target.value)}
         />
-        {/* 3. إضافة القائمة المنسدلة */}
         <Select
+          // استدعاء الدالة عند اختيار قيمة جديدة.
           onValueChange={onCategoryChange}
+          // القيمة الافتراضية المحددة.
           defaultValue={category}
+          // تعطيل القائمة بناءً على الخاصية المستلمة.
           disabled={isCategoryDisabled}
         >
           <SelectTrigger className="w-full sm:w-[180px]">
             <SelectValue placeholder="Select a category" />
           </SelectTrigger>
           <SelectContent>
+            {/* عرض كل فئة كعنصر في القائمة المنسدلة. */}
             {categories.map((cat) => (
               <SelectItem key={cat} value={cat} className="capitalize">
                 {cat}
