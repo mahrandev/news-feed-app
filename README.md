@@ -1,4 +1,4 @@
-# 📰 تطبيق أخبار (News Feed App)
+<img width="2016" height="877" alt="image" src="https://github.com/user-attachments/assets/7f607be8-f79b-4d8d-8a44-8914c1b925e4" /># 📰 تطبيق أخبار (News Feed App)
 
 <div align="center">
 
@@ -33,9 +33,9 @@
   
   ![صورة للمشروع](https://i.imgur.com/your-screenshot-url.png)
   
-  > **نصيحة:** قم بتشغيل المشروع محلياً، خذ لقطة شاشة جميلة، ارفعها على موقع مثل [Imgur](https://imgur.com/upload)، واستبدل الرابط أعلاه برابط صورتك.
 
-</div>
+</div><img width="1901" height="877" alt="Screenshot 2025-09-28 185813" src="https://github.com/user-attachments/assets/3db5d1b2-1b5e-4384-8faa-abd1c82dad9f" />
+
 
 ---
 
