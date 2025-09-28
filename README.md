@@ -19,7 +19,7 @@
 
 <br />
 
-### 🚀 [رابط العرض المباشر (Live Demo)](https://your-project-name.vercel.app)
+### 🚀 [رابط العرض المباشر (Live Demo)]([https://your-project-name.vercel.app](https://news-feed-app-u4wj.vercel.app/))
 
 > **ملاحظة:** استبدل الرابط أعلاه بالرابط الفعلي لمشروعك بعد نشره على Vercel.
 
