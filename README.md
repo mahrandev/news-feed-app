@@ -1,4 +1,4 @@
-<img width="2016" height="877" alt="image" src="https://github.com/user-attachments/assets/7f607be8-f79b-4d8d-8a44-8914c1b925e4" /># 📰 تطبيق أخبار (News Feed App)
+# 📰 تطبيق أخبار (News Feed App)
 
 <div align="center">
 
